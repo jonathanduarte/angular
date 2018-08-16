@@ -1,0 +1,9 @@
+<div *ngIf="lacra">
+  <h2>{{lacra.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{lacra.id}}</div>
+  <div >
+    <label>Nombre:
+      <input [(ngModel)]= "lacra.name" placeholder="Ingrese un dato">
+    </label>
+  </div>
+</div>

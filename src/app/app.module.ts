@@ -4,11 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CriminalFileComponent } from './criminal-file/criminal-file.component';
 import { FormsModule } from '@angular/forms';
+import { LacraDetailComponent } from './lacra-detail/lacra-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CriminalFileComponent
+    CriminalFileComponent,
+    LacraDetailComponent
   ],
   imports: [
     BrowserModule,

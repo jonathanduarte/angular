@@ -5,13 +5,4 @@
     <span class="badge">{{lacra.id}}</span> {{ lacra.name }}
   </li>
 </ul>
-
-<div *ngIf="selectedLacra">
-  <h2>{{selectedLacra.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{selectedLacra.id}}</div>
-  <div >
-    <label>Nombre:
-      <input [(ngModel)]= "selectedLacra.name" placeholder="Ingrese un dato">
-    </label>
-  </div>
-</div>
+<app-lacra-detail [lacra]="selectedLacra"></app-lacra-detail>
