@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Delincuente } from '../delincuente';
+import { LACRAS } from '../mock-delincuentes';
 
 
 @Component({
@@ -8,18 +9,17 @@ import { Delincuente } from '../delincuente';
   styleUrls: ['./criminal-file.component.css']
 })
 export class CriminalFileComponent implements OnInit {
-  delincuente: Delincuente = {
-    id: 1,
-    firstName: "Brayan",
-    lastName: "Perez",
-    alias: "Mechitas",
-    delito: "Robo"
 
-  }
+  lacras = LACRAS;
+
+  selectedLacra: Delincuente;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  onSelect(lacra: Delincuente): void {
+    this.selectedLacra = lacra;
+  }
 }
